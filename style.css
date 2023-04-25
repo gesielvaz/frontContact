@@ -1,0 +1,14 @@
+body {
+    font: normal 15pt times "Times New Roman;
+
+}
+label{
+    font: normal 12 italic;
+}
+input {
+    display: flex;
+    
+}
+select{
+    display: block;
+}

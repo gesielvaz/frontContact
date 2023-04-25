@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Paciente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Cadastro de Paciente</h1>
+    <form action="http://localhost:7009/patient" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="name"><br>
+
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="lastName"><br>
+
+        <label for="documento">Documento:</label>
+        <input type="text" id="documento" name="document"><br>
+
+        <label for="dataNascimento">Data de Nascimento:</label>
+        <input type="date" id="dataNascimento" name="dateOfBirth"><br>
+
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sex">
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+        </select><br>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="address"><br>
+
+        <label for="numeroCasa">Número da Casa:</label>
+        <input type="text" id="numeroCasa" name="houseNumber"><br>
+
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="phone"><br>
+
+        <label for="nomeContatoEmergencia">Nome do Contato de Emergência:</label>
+        <input type="text" id="nomeContatoEmergencia" name="emergencyContactName"><br>
+
+        <label for="numeroEmergencia">Número de Emergência:</label>
+        <input type="text" id="numeroEmergencia" name="emergencyNumber"><br>
+
+        <label for="historicoMedico">Histórico Médico:</label>
+        <input type="text" id="historicoMedico" name="medicalHistory"><br>
+
+        <label for="medicamentosAtuais">Medicamentos Atuais:</label>
+        <input type="text" id="medicamentosAtuais" name="currentMedical"><br>
+
+        <label for="numeroPlanoSaude">Número do Plano de Saúde:</label>
+        <input type="text" id="numeroPlanoSaude" name="healthPlanNumber"><br>
+
+        <label for="nomeMedico">Nome do Médico:</label>
+        <input type="text" id="nomeMedico" name="doctorName"><br>
+
+        <label for="nomeEnfermeiro">Nome do Enfermeiro:</label>
+        <input type="text" id="nomeEnfermeiro" name="nurseName"><br>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+    <div id="mensagem"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>
